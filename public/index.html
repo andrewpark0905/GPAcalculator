@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPA Tracker</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>GPA Tracker</h1>
+
+    <section class="card">
+      <label for="title">Title</label>
+      <input id="title" placeholder="e.g., Fall 2025" />
+
+      <div id="classes"></div>
+      <button id="addClassBtn" type="button">+ Add class</button>
+
+      <div class="row space">
+        <div>
+          <div class="label">Unweighted</div>
+          <div id="uwOut" class="big">—</div>
+        </div>
+        <div>
+          <div class="label">Weighted</div>
+          <div id="wOut" class="big">—</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <button id="calcBtn" type="button">Calculate</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
